@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <h2 class="nav-title">
+            TravelBloom
+        </h2>
+        <ul class="nav-list">
+            <li>
+                <a class="nav-link" href="./travel_recommendation.html">Home</a>
+            </li>
+            <li>
+                <a class="nav-link" href="./travel_recommendation-about_us.html">About us</a>
+            </li>
+            <li>
+                <a class="nav-link" href="./travel_recommendation-contact_us.html">Contact us</a>
+            </li>
+        </ul>
+        <form class="search-bar form-hide">
+            <input 
+            id="search" 
+            type="search"
+            class="search-input" 
+            placeholder="Enter a destination or keyword" 
+            />
+            <span class="search-icon"></span>
+            <button id="search-btn" type="submit" class="btn search-btn">Search</button>
+            <button id="clear-btn" type="button" class="btn clear-btn">Clear</button>
+        </form>
+    </nav>
+    <section id="about_us">
+        <div class="container">
+            <ul class="icons-list">
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" id="Twitter--Streamline-Feather" height="16" width="16">
+                            <desc>
+                                Twitter Streamline Icon: https://streamlinehq.com
+                            </desc>
+                            <path d="M14.375 1.875a6.8125 6.8125 0 0 1 -1.9625000000000001 0.95625 2.8000000000000003 2.8000000000000003 0 0 0 -4.9125000000000005 1.875v0.625A6.6625 6.6625 0 0 1 1.875 2.5s-2.5 5.625 3.125 8.125a7.275 7.275 0 0 1 -4.375 1.25c5.625 3.125 12.5 0 12.5 -7.1875a2.8125 2.8125 0 0 0 -0.05 -0.5187499999999999A4.825 4.825 0 0 0 14.375 1.875z" stroke-width="1"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook" id="Facebook--Streamline-Feather" height="16" width="16">
+                            <desc>
+                                Facebook Streamline Icon: https://streamlinehq.com
+                            </desc>
+                            <path d="M11.25 1.25h-1.875a3.125 3.125 0 0 0 -3.125 3.125v1.875H4.375v2.5h1.875v5h2.5v-5h1.875l0.625 -2.5h-2.5V4.375a0.625 0.625 0 0 1 0.625 -0.625h1.875z" stroke-width="1"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram" id="Instagram--Streamline-Feather" height="16" width="16">
+                            <desc>
+                                Instagram Streamline Icon: https://streamlinehq.com
+                            </desc>
+                            <path d="M4.375 1.25h6.25s3.125 0 3.125 3.125v6.25s0 3.125 -3.125 3.125H4.375s-3.125 0 -3.125 -3.125V4.375s0 -3.125 3.125 -3.125" stroke-width="1"></path>
+                            <path d="M10 7.106249999999999A2.5 2.5 0 1 1 7.893750000000001 5 2.5 2.5 0 0 1 10 7.106249999999999z" stroke-width="1"></path>
+                            <path d="m10.9375 4.0625 0.00625 0" stroke-width="1"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube" id="Youtube--Streamline-Feather" height="16" width="16">
+                            <desc>
+                                Youtube Streamline Icon: https://streamlinehq.com
+                            </desc>
+                            <path d="M14.087499999999999 4.0125a1.7374999999999998 1.7374999999999998 0 0 0 -1.2125 -1.25C11.799999999999999 2.5 7.5 2.5 7.5 2.5s-4.3 0 -5.375 0.28750000000000003a1.7374999999999998 1.7374999999999998 0 0 0 -1.2125 1.25A18.125 18.125 0 0 0 0.625 7.34375a18.125 18.125 0 0 0 0.28750000000000003 3.33125A1.7374999999999998 1.7374999999999998 0 0 0 2.125 11.875c1.075 0.28750000000000003 5.375 0.28750000000000003 5.375 0.28750000000000003s4.3 0 5.375 -0.28750000000000003a1.7374999999999998 1.7374999999999998 0 0 0 1.2125 -1.25 18.125 18.125 0 0 0 0.28750000000000003 -3.28125 18.125 18.125 0 0 0 -0.28750000000000003 -3.33125z" stroke-width="1"></path>
+                            <path d="m6.09375 9.3875 3.59375 -2.04375 -3.59375 -2.04375 0 4.0875z" stroke-width="1"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        <div class="content">
+        <div class="about-info">
+            <h1 class="title">
+                ABOUT US
+            </h1>
+            <p class="about-text">
+                Welcome to Our Company! We are a team of passionate individuals dedicated to 
+                providing excellent services/products to our customers. Our mission is to provide 
+                the best experience for people traveling to different destinations around the world.
+                Our values include integrity, innovation, customer satisfaction, and teamwork. 
+                We believe in putting our customers first and working together to achieve our goals.
+                Feel free to explore our website to learn more about what we offer!
+            </p>
+        </div>
+        <div class="team">
+            <h2 class="team-title">
+                Our Team
+            </h2>
+            <ul class="team-list">
+                <li class="team-item">
+                    <img src="#">
+                    <h3 class="worker-name">
+                        John Doe
+                    </h3>
+                    <p class="worker-desc">
+                        John is responsible for...
+                    </p>
+                    <button class="worker-btn">
+                        CEO
+                    </button>
+                </li>
+                <li class="team-item">
+                    <img src="#">
+                    <h3 class="worker-name">
+                        Celina Thomas
+                    </h3>
+                    <p class="worker-desc">
+                        Celina Thomas is responsible for...
+                    </p>
+                    <button class="worker-btn">
+                        Team Lead
+                    </button>
+                </li>
+                <li class="team-item">
+                    <img src="#">
+                    <h3 class="worker-name">
+                        Mike Tysen
+                    </h3>
+                    <p class="worker-desc">
+                        Mike Tysen is responsible for...
+                    </p>
+                    <button class="worker-btn">
+                        Delivery Head
+                    </button>
+                </li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
